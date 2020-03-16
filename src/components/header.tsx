@@ -39,6 +39,9 @@ export default function Header() {
                   </ul>
                 </div>
               </li>
+              <li>
+                <NavLink to={`/pokemon`}>Pokemon</NavLink>
+              </li>
             </ul>
           </div>
         </nav>

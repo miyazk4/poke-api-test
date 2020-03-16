@@ -5,6 +5,8 @@ header {
   display: grid;
   grid-template-columns: 1fr minmax(100px, 400px);
   margin: 0 56px 0 56px;
+  height: 100%;
+  align-items: center;
 
   & img {
     max-width: 100px;
@@ -13,7 +15,6 @@ header {
 
 .mainNavigation {
   display: flex;
-  align-items: center;
 
   & ul {
     & li {
@@ -23,7 +24,7 @@ header {
         text-decoration: none;
         color: #fff;
         display: block;
-        padding: 16px;
+        padding: 0 16px;
         &.fill {
           background-color: rgb(202, 36, 45);
         }
@@ -44,9 +45,9 @@ header {
     display: none;
     position: absolute;
     right: 50%;
-
     & li a {
-      width: 100%;
+      display: flex;
+      white-space: nowrap;
       background-color: rgb(244, 81, 83);
     }
   }
