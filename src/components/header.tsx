@@ -16,10 +16,16 @@ export default function Header() {
           <div className="mainNavigation">
             <ul>
               <li>
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/" activeClassName="fill" exact={true}>
+                  Home
+                </NavLink>
               </li>
               <li className="aboutNav">
-                <NavLink to="/about" onClick={e => e.preventDefault()}>
+                <NavLink
+                  to="/about"
+                  activeClassName="fill"
+                  onClick={e => e.preventDefault()}
+                >
                   About
                 </NavLink>
                 <div className="secondaryNav">
