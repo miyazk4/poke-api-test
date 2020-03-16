@@ -1,8 +1,6 @@
 import React from "react";
 import pokeHeader from "../images/pokeapi_256.png"; // Img
-import { NavLink, Switch, Route } from "react-router-dom";
-import Home from "../pages/home/home";
-import About from "../pages/about";
+import { NavLink } from "react-router-dom";
 import "./header.scss";
 
 export default function Header() {
@@ -36,14 +34,6 @@ export default function Header() {
                 </div>
               </li>
             </ul>
-            <Switch>
-              <Route path="/about">
-                <About />
-              </Route>
-              <Route path="/">
-                <Home />
-              </Route>
-            </Switch>
           </div>
         </nav>
       </header>
