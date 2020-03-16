@@ -1,0 +1,21 @@
+.navigationContainer {
+  background-color: rgb(244, 81, 83);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.mainNavigation {
+  border: 1px solid green;
+}
+
+.aboutNav {
+  .secondaryNav {
+    display: none;
+  }
+
+  &:hover {
+    .secondaryNav {
+      display: block;
+    }
+  }
+}
