@@ -5,7 +5,6 @@ import { Switch, Route } from "react-router-dom";
 import About from "./pages/about";
 import Home from "./pages/home";
 import Pokemon from "./pages/pokemon";
-
 function App() {
   return (
     <div className="App">
